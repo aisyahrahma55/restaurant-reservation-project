@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Form - Cafe Jadoel</title>
+    </head>
+    <body>
+        <h1>Order Form - Cafe Jadoel</h1>
+        <form action="/submit_order" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <h3>Select Your Order:</h3>
+            <input type="checkbox" id="nasi_goreng" name="order_item" value="Nasi Goreng">
+            <label for="nasi_goreng">Nasi Goreng - Rp. 15.000</label><br>
+
+            <input type="checkbox" id="mie_goreng" name="order_item" value="Mie Goreng">
+            <label for="mie_goreng">Mie Goreng - Rp. 15.000</label><br>
+
+            <input type="checkbox" id="lemon_tea" name="order_item" value="Lemon Tea">
+            <label for="lemon_tea">Lemon Tea - Rp. 5.000</label><br>
+
+            <input type="checkbox" id="orange_juice" name="order_item" value="Orange Juice">
+            <label for="orange_juice">Orange Juice - Rp. 7.000</label><br><br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </body>
+</html>
